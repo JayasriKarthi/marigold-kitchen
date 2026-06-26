@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marigold Kitchen — Bright, bold, modern Indian</title>
+  <meta name="description" content="Marigold Kitchen serves bright, bold modern Indian plates in Chennai. Spice-forward, colourful, and made to be shared." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__brand" aria-label="Marigold Kitchen home">
+      <span class="nav__dot" aria-hidden="true"></span>
+      Marigold
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="#specials">Specials</a>
+      <a href="#visit">Visit</a>
+      <a href="#book" class="nav__cta">Book a table</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero__blob hero__blob--a" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--b" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--c" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <p class="eyebrow">Modern Indian · Nammakal</p>
+      <h1 class="hero__title">
+        Food that<br />
+        <span class="hero__word hero__word--1">tastes</span>
+        <span class="hero__word hero__word--2">like</span>
+        <span class="hero__word hero__word--3">colour.</span>
+      </h1>
+      <p class="hero__lede">
+        Spice-forward plates built to be passed around the table. Loud flavours,
+        bright produce, nothing beige.
+      </p>
+      <div class="hero__actions">
+        <a href="#book" class="btn btn--solid">Reserve a table</a>
+        <a href="#menu" class="btn btn--ghost">See the menu</a>
+      </div>
+      <ul class="hero__facts">
+        <li><strong>Open</strong> Tue–Sun, 12–11</li>
+        <li><strong>Where</strong> Bhavani , Namakkal</li>
+        <li><strong>Vibe</strong> Loud, bright, sharing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Marquee strip ===== -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip__track">
+      <span>Tandoor smoke</span><span class="strip__dot">●</span>
+      <span>Curry-leaf butter</span><span class="strip__dot">●</span>
+      <span>Mango &amp; chilli</span><span class="strip__dot">●</span>
+      <span>Fresh-pressed kokum</span><span class="strip__dot">●</span>
+      <span>Tandoor smoke</span><span class="strip__dot">●</span>
+      <span>Curry-leaf butter</span><span class="strip__dot">●</span>
+      <span>Mango &amp; chilli</span><span class="strip__dot">●</span>
+      <span>Fresh-pressed kokum</span><span class="strip__dot">●</span>
+    </div>
+  </div>
+
+  <!-- ===== Story ===== -->
+  <section class="story" id="story">
+    <div class="story__grid">
+      <div class="story__copy reveal">
+        <p class="eyebrow eyebrow--coral">Our story</p>
+        <h2 class="section-title">We cook the way we eat at home — just louder.</h2>
+        <p>
+          Marigold started as a Sunday lunch that ran too long and fed too many
+          people. We kept the part that mattered: a crowded table, hands reaching
+          across dishes, and someone asking for the recipe.
+        </p>
+        <p>
+          Everything is made in-house, from the masalas we roast each morning to
+          the kulfi we churn at night. We source from growers across Tamil Nadu
+          and pick produce for how bright it tastes, not how long it keeps.
+        </p>
+        <a href="#visit" class="link-arrow">Come find us &rarr;</a>
+      </div>
+      <div class="story__cards" aria-hidden="false">
+        <div class="chip chip--marigold reveal">Roasted fresh daily</div>
+        <div class="chip chip--teal reveal">Local growers</div>
+        <div class="chip chip--berry reveal">Built for sharing</div>
+        <div class="chip chip--coral reveal">Veg-forward kitchen</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Menu ===== -->
+  <section class="menu" id="menu">
+    <div class="menu__head reveal">
+      <p class="eyebrow eyebrow--teal">The menu</p>
+      <h2 class="section-title">Pick a few. Pass them around.</h2>
+      <div class="menu__filters" id="menuFilters" role="tablist" aria-label="Menu categories">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Everything</button>
+        <button class="filter" data-filter="small" role="tab" aria-selected="false">Small plates</button>
+        <button class="filter" data-filter="large" role="tab" aria-selected="false">Big plates</button>
+        <button class="filter" data-filter="sweet" role="tab" aria-selected="false">Sweet</button>
+        <button class="filter" data-filter="drink" role="tab" aria-selected="false">Drinks</button>
+      </div>
+    </div>
+
+    <div class="menu__grid" id="menuGrid">
+      <!-- cards injected here by script.js -->
+    </div>
+    <p class="menu__empty" id="menuEmpty" hidden>Nothing in this group yet — try another.</p>
+  </section>
+
+  <!-- ===== Specials ===== -->
+  <section class="specials" id="specials">
+    <div class="specials__head reveal">
+      <p class="eyebrow">This week</p>
+      <h2 class="section-title section-title--light">Chef's bright list</h2>
+    </div>
+    <div class="specials__row">
+      <article class="special reveal">
+        <span class="special__num">01</span>
+        <h3>Beetroot &amp; coconut tikki</h3>
+        <p>Crisp outside, magenta inside, with a curry-leaf yoghurt.</p>
+      </article>
+      <article class="special reveal">
+        <span class="special__num">02</span>
+        <h3>Chilli-mango prawns</h3>
+        <p>Grilled tiger prawns, raw mango, a slick of toasted chilli oil.</p>
+      </article>
+      <article class="special reveal">
+        <span class="special__num">03</span>
+        <h3>Saffron &amp; pistachio kulfi</h3>
+        <p>Hand-churned, set on a stick, dusted with rose.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Booking ===== -->
+  <section class="book" id="book">
+    <div class="book__grid">
+      <div class="book__copy reveal">
+        <p class="eyebrow eyebrow--coral">Reserve</p>
+        <h2 class="section-title">Save a spot at the table.</h2>
+        <p>
+          We hold tables for two to ten. For bigger groups or buyouts, drop us a
+          note and we'll build a menu around you.
+        </p>
+        <p class="book__contact">
+          <a href="tel:+914400000000">+91 44 0000 0000</a><br />
+          <a href="mailto:hello@marigold.kitchen">hello@marigold.kitchen</a>
+        </p>
+      </div>
+
+      <form class="book__form reveal" id="bookForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Who's the table under?" required />
+          <span class="field__error" data-for="name"></span>
+        </div>
+        <div class="field field--split">
+          <div>
+            <label for="people">Guests</label>
+            <select id="people" name="people" required>
+              <option value="">Choose</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8+</option>
+            </select>
+            <span class="field__error" data-for="people"></span>
+          </div>
+          <div>
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required />
+            <span class="field__error" data-for="date"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="So we can confirm" required />
+          <span class="field__error" data-for="email"></span>
+        </div>
+        <button type="submit" class="btn btn--solid btn--full">Request a table</button>
+        <p class="book__success" id="bookSuccess" hidden>Got it — we'll email to confirm shortly.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Visit / footer ===== -->
+  <footer class="foot" id="visit">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <span class="nav__dot" aria-hidden="true"></span>
+        <span>Marigold Kitchen</span>
+        <p>Bright, bold, modern Indian. Made to be shared.</p>
+      </div>
+      <div class="foot__col">
+        <h4>Find us</h4>
+        <p>14 Sterling Road<br />Nungambakkam, Chennai 600034</p>
+      </div>
+      <div class="foot__col">
+        <h4>Hours</h4>
+        <p>Tue–Sun · 12pm–11pm<br />Closed Mondays</p>
+      </div>
+      <div class="foot__col">
+        <h4>Say hi</h4>
+        <p>
+          <a href="#">Instagram</a><br />
+          <a href="#">WhatsApp</a><br />
+          <a href="mailto:hello@marigold.kitchen">Email</a>
+        </p>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>© 2026 Marigold Kitchen</span>
+      <a href="#top" class="foot__top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
